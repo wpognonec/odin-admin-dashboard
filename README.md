@@ -1,1 +1,1 @@
-# odin-admin-dashboard
+Dashboard project written in HTML, CSS and Javascript
