@@ -113,3 +113,13 @@ input[type="text"] {
   outline: none;
   padding: 5px;
 }
+
+@media only screen and (max-width: 906px) {
+  div.sidebar {
+    width: 0px;
+  }
+
+  .wrapper {
+    grid-template-columns: 0px auto;
+  }
+}
