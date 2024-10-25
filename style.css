@@ -1,59 +1,104 @@
+/* * {
+  border: 1px solid red;
+} */
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   color: #f8fafc;
 }
 
+a {
+  text-decoration: none;
+  color: #f8fafc;
+}
+
+a:hover {
+  color: #94a3b8;
+  filter: invert(68%) sepia(21%) saturate(291%) hue-rotate(175deg) brightness(92%) contrast(86%);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid rgb(61, 68, 77);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 250px auto;
-  grid-template-rows: 60px;
+  grid-auto-rows: auto 1fr;
   height: 100vh;
 }
 
 .content-wrapper {
   display: grid;
-  grid-template-columns: auto 300px;
-  height: 100%;
-}
-
-.card-wrapper {
-  display: grid;
-  gap: 20px;
   padding: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-}
-
-.card {
-  border: 1px solid rgb(61, 68, 77);
-  border-radius: 6px;
-}
-
-.sidebar {
-  grid-row: 1 / 3;
-  background: rgb(13, 17, 23);
-  padding-left: 20px;
-  padding-top: 10px;
-  border-right: 1px solid rgba(61, 68, 77, 0.7);
+  grid-template-columns: auto 300px;
 }
 
 .header {
   background: rgb(0, 0, 0);
   border-bottom: 1px solid rgb(61, 68, 77);
-  /* align-self: center; */
+  padding: 10px;
+}
+
+.flexgap {
+  display: flex;
+  gap: 10px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.top-icons {
+  gap: 10px;
+}
+
+.card-wrapper {
+  display: grid;
+  gap: 20px;
+  padding-right: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.side-wrapper {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid rgb(61, 68, 77);
+  border-left: 5px solid rgb(61, 68, 77);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-row: 1 / 3;
+  background: rgb(13, 17, 23);
+  border-right: 1px solid rgba(61, 68, 77, 0.7);
+  padding: 20px;
 }
 
 .content {
   background: rgb(0, 0, 0);
 }
 
-.content-wrapper>div:last-child {
-  background: rgb(13, 17, 23);
+.section-header {
+  padding-bottom: 10px;
 }
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+li {
+  gap: 10px;
+  padding-bottom: 5px;
 }
 
 h1, h2, h3 {
@@ -64,7 +109,7 @@ input[type="text"] {
   color: #f8fafc;
   background: rgb(0, 0, 0);
   border: 1px solid rgb(61, 68, 77);
-  border-radius: 6px;
+  border-radius: 5px;
   outline: none;
   padding: 5px;
 }
