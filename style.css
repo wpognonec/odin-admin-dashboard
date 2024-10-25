@@ -7,7 +7,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 250px auto;
-  grid-template-rows: 150px;
+  grid-template-rows: 60px;
   height: 100vh;
 }
 
@@ -25,7 +25,8 @@ body {
 }
 
 .card {
-  border: 1px solid red;
+  border: 1px solid rgb(61, 68, 77);
+  border-radius: 6px;
 }
 
 .sidebar {
@@ -39,6 +40,7 @@ body {
 .header {
   background: rgb(0, 0, 0);
   border-bottom: 1px solid rgb(61, 68, 77);
+  /* align-self: center; */
 }
 
 .content {
@@ -56,4 +58,13 @@ ul {
 
 h1, h2, h3 {
   font-weight: 500;
+}
+
+input[type="text"] {
+  color: #f8fafc;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(61, 68, 77);
+  border-radius: 6px;
+  outline: none;
+  padding: 5px;
 }
