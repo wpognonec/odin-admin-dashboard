@@ -27,7 +27,7 @@ hr {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 200px auto;
   grid-auto-rows: auto 1fr;
   height: 100vh;
 }
@@ -81,6 +81,10 @@ hr {
   background: rgb(13, 17, 23);
   border-right: 1px solid rgba(61, 68, 77, 0.7);
   padding: 20px;
+}
+
+h1 {
+  text-align: center;
 }
 
 .content {
